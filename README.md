@@ -10,7 +10,7 @@
 
 ### Transaction Logs
 
-![App Screenshot](https://github.com/2604manishyadav/Bankapp/blob/d9ad7e37fdf190da4cb08ef20296bb0a53391c5c/Transaction-logs.PNG)
+![App Screenshot](https://github.com/2604manishyadav/Test-bankapp/blob/main/images/Transaction-logs.PNG)
 
 ### Tech stack used in this project:
 
@@ -105,7 +105,7 @@ jenkin-install.sh
 
 Edit below file
 sudo vim /usr/lib/systemd/system/jenkins.service file
-![App Screenshot](https://github.com/2604manishyadav/Bankapp/blob/f3e37cf842890342e5a81e2528f1298ba0bbc7e4/Update-Jenkins-Port.PNG)
+![App Screenshot](https://github.com/2604manishyadav/Test-bankapp/blob/main/images/Update-Jenkins-Port.PNG)
 
 #### Reload deamon and restart jenkins
     sudo systemctl daemon-reload 
@@ -118,11 +118,11 @@ sudo vim /usr/lib/systemd/system/jenkins.service file
     newgrp docker
 
 #### Create CI Pipeline using Jenkins for pushing image to DockerHub, jenkins configuration file shared 
-![App Screenshot](https://github.com/2604manishyadav/Bankapp/blob/c6c27ead04bcd0716a48c132fab209a559a837e6/BankappCI.PNG)
+![App Screenshot](https://github.com/2604manishyadav/Test-bankapp/blob/main/images/BankappCI.PNG)
 
 #### Add credential (Username and password) of DockerHub in credential of Jenkins
 
-![App Screenshot](https://github.com/2604manishyadav/Bankapp/blob/c6c27ead04bcd0716a48c132fab209a559a837e6/AddCredentialsof%20DockerHub.PNG)
+![App Screenshot](https://github.com/2604manishyadav/Test-bankapp/blob/main/images/AddCredentialsof%20DockerHub.PNG)
 
 ### Install & Configure ArgoCD
 
@@ -176,14 +176,14 @@ sudo vim /usr/lib/systemd/system/jenkins.service file
 
 ####  Sucessfully create application in ArgoCD
 
-![App Screenshot](https://github.com/2604manishyadav/Bankapp/blob/c93d706b6c8702b1abc0c0ccc56c1cbbb7fe2466/ApplicationDeploy.PNG)    
+![App Screenshot](https://github.com/2604manishyadav/Test-bankapp/blob/main/images/ApplicationDeploy.PNG)    
 
 #### Change port type of deployment service from ClusterIP to Nodeport for accessing Bankapp application
      kubectl patch svc bankapp-service -n bankapp-namespace -p '{"spec": {"type": "NodePort"}}'
 
 #### Bankapp Deployed in EKS Cluster
 
-![App Screenshot](https://github.com/2604manishyadav/Bankapp/blob/e727b7a439b45d570d233342889acac4345f5d88/BankappDeploy.PNG)
+![App Screenshot](https://github.com/2604manishyadav/Test-bankapp/blob/main/images/BankappDeploy.PNG)
 
 
 ## Monitor EKS cluster, kubernetes components and workloads using prometheus and grafana via HELM (On Master machine)
@@ -214,11 +214,11 @@ sudo vim /usr/lib/systemd/system/jenkins.service file
 
 ### Grafana Dashboard
 
-![App Screenshot](https://github.com/2604manishyadav/Bankapp/blob/668a73247811eb569cc841220439c4e34037d119/Grafana-Dashboard.PNG)
+![App Screenshot](https://github.com/2604manishyadav/Test-bankapp/blob/main/images/Grafana-Dashboard.PNG)
 
 ### Grafana Cluster view
 
-![App Screenshot](https://github.com/2604manishyadav/Bankapp/blob/668a73247811eb569cc841220439c4e34037d119/GrafanaCluster.PNG)
+![App Screenshot](https://github.com/2604manishyadav/Test-bankapp/blob/main/images/GrafanaCluster.PNG)
 
 
 
